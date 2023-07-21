@@ -1,10 +1,10 @@
 {
   "name": "esbuild-scripts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Esbuild live reloading server and HTML renderer",
 	"type": "module",
   "bin": {
-		"esbuild-scripts": "bin.js"
+		"esbuild-scripts": "esbuild-scripts"
 	},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
