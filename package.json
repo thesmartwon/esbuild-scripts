@@ -1,35 +1,26 @@
 {
-  "name": "esbuild-scripts",
-  "version": "0.0.2",
-  "description": "Esbuild live reloading server and HTML renderer",
+	"name": "esbuild-scripts",
+	"version": "0.0.3",
+	"description": "Esbuild live reloading server and HTML renderer",
 	"type": "module",
-  "bin": {
-		"esbuild-scripts": "esbuild-scripts"
+	"bin": {
+		"esbuild-scripts": "./esbuild-scripts.mjs"
 	},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/clickingbuttons/esbuild-scripts.git"
-  },
-  "keywords": [
-    "esbuild",
-    "http",
-    "server",
-    "html",
-    "renderer"
-  ],
-  "author": "clickingbuttons",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/clickingbuttons/esbuild-scripts/issues"
-  },
-  "homepage": "https://github.com/clickingbuttons/esbuild-scripts#readme",
-  "dependencies": {
-    "commander": "^11.0.0"
-  },
+	"repository": "https://github.com/thesmartwon/esbuild-scripts",
+	"keywords": [
+		"esbuild",
+		"scripts",
+		"live",
+		"http",
+		"server"
+	],
+	"author": "thesmartwon",
+	"license": "MIT",
+	"homepage": "https://github.com/thesmartwon/esbuild-scripts#readme",
+	"dependencies": {
+		"commander": "^11.0.0"
+	},
 	"peerDependencies": {
-    "esbuild": "^0.18.0"
+		"esbuild": "^0.18.0"
 	}
 }
