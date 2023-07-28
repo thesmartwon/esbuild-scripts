@@ -24,11 +24,7 @@ new EventSource('/esbuild').addEventListener('change', e => {
 `
 async function streamToString(stream) {
 	const chunks = [];
-
-	for await (const chunk of stream) {
-		chunks.push(Buffer.from(chunk));
-	}
-
+	for await (const chunk of stream) chunks.push(Buffer.from(chunk));
 	return Buffer.concat(chunks).toString("utf-8");
 }
 
@@ -61,7 +57,6 @@ export async function start(esbuildConfig, devConfig = { host: 'localhost', port
 				res.end('<h1>A custom 404 page</h1>')
 				return
 			}
-
 
 			const contentType = proxyRes.headers?.['content-type']
 			if (contentType && contentType.includes('text/html')) {

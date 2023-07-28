@@ -1,10 +1,10 @@
 {
 	"name": "esbuild-scripts",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Esbuild live reloading server and HTML renderer",
 	"type": "module",
 	"bin": {
-		"esbuild-scripts": "./esbuild-scripts.mjs"
+		"esbuild-scripts": "esbuild-scripts.mjs"
 	},
 	"repository": "https://github.com/thesmartwon/esbuild-scripts",
 	"keywords": [
