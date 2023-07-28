@@ -9,7 +9,7 @@ async function getConfig(command, buildOpts) {
 	var res = undefined;
 	const { config } = command.parent.opts()
 	const configPath = join(process.cwd(), config)
-	const { esbuildConfig, devConfig } = await import(configPath);
+	const { esbuildConfig, devConfig } = await import(`file://${configPath}`);
 	switch (typeof esbuildConfig) {
 		case 'function':
 			res = {
