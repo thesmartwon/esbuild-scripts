@@ -1,6 +1,6 @@
 {
 	"name": "esbuild-scripts",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Esbuild live reloading server and HTML renderer",
 	"type": "module",
 	"bin": {
@@ -21,6 +21,6 @@
 		"commander": "^11.0.0"
 	},
 	"peerDependencies": {
-		"esbuild": "^0.18.0"
+		"esbuild": "^0.19.3"
 	}
 }
