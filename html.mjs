@@ -1,3 +1,0 @@
-function html(emitted, liveReload) {
-
-}

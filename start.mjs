@@ -29,6 +29,15 @@ async function streamToString(stream) {
 }
 
 export async function start(esbuildConfig, devConfig = { host: 'localhost', port: 3000 }) {
+	esbuildConfig.plugins = esbuildConfig.plugins || [];
+	esbuildConfig.plugins.push({
+		name: 'notify',
+		setup(build) {
+			build.onEnd(result => {
+				if (result.errors.length == 0) console.log('sucessfully built')
+			})
+		}
+	});
 	const context = await esbuild.context(esbuildConfig)
 	await context.watch()
 
